@@ -1,0 +1,8 @@
+{
+  "name": "teemoBot",
+  "description": "discord Teemo bot",
+  "repository": "-",
+  "logo": "-",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
