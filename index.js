@@ -46,6 +46,9 @@ client.on("message", message => {
   if (command === "주누") {
     message.channel.send("태준남친");
   }
+  if (command === "종혁") {
+    message.channel.send("치이익-");
+  }
   if (command === "^j") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
