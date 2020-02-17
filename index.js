@@ -58,7 +58,7 @@ client.on("message", message => {
   if (command === "이준선") {
     message.channel.send("김용문딱가리-주누");
   }
-  if (commd === "태홍") {
+  if (command === "태홍") {
     message.channel.send("ㅉ");
   }
   if (command === "^j") {
