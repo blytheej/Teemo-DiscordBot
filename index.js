@@ -24,6 +24,12 @@ client.on("message", message => {
   if (command === "티모") {
     message.channel.send("기여어");
   }
+  if (command === "주미") {
+    message.channel.send("줌쌤");
+  }
+  if (command === "준돈") {
+    message.channel.send("통장에유강민");
+  }
   if (command === "태준") {
     tj += 1;
     message.channel.send(`내연녀 스택 : ${tj}`);
@@ -33,6 +39,9 @@ client.on("message", message => {
   }
   if (command === "하린누나") {
     message.channel.send("뿌링핫도그 대기중");
+  }
+  if (command === "상윤") {
+    message.channel.send("인기녀");
   }
   if (command === "주누") {
     message.channel.send("태준남친");
