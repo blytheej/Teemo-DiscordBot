@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-let tj = 0;
+let tj = 97;
 //const GoogleImages  = require('google-images');
 
 client.on("ready", () => {
