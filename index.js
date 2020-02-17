@@ -28,6 +28,9 @@ client.on("message", message => {
     tj += 1;
     message.channel.send(`내연녀 스택 : ${tj}`);
   }
+  if (command === "머홍") {
+    message.channel.send("권상윤 남자친구");
+  }
 
   if (command === "^j") {
     if (message.member.voiceChannel) {
