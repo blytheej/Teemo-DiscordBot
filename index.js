@@ -55,6 +55,9 @@ client.on("message", message => {
   if (command === "정태준") {
     message.channel.send("김태홍:권상윤동거남녀?");
   }
+  if (command === "이준선") {
+    message.channel.send("김용문딱가리by주누");
+  }
   if (command === "^j") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
