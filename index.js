@@ -31,7 +31,12 @@ client.on("message", message => {
   if (command === "머홍") {
     message.channel.send("권상윤 남자친구");
   }
-
+  if (command === "하린누나") {
+    message.channel.send("뿌링핫도그 대기중");
+  }
+  if (command === "주누") {
+    message.channel.send("태준남친");
+  }
   if (command === "^j") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
