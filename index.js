@@ -53,10 +53,10 @@ client.on("message", message => {
     message.channel.send("주미꼬봉이준선");
   }
   if (command === "정태준") {
-    message.channel.send("김태홍:권상윤동거남녀?");
+    message.channel.send("권상윤동거남녀?-김태홍");
   }
   if (command === "이준선") {
-    message.channel.send("김용문딱가리by주누");
+    message.channel.send("김용문딱가리-주누");
   }
   if (command === "^j") {
     if (message.member.voiceChannel) {
