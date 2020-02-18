@@ -79,11 +79,11 @@ client.on("message", message => {
   if (command === "전동환") {
     message.channel.send("상추새기");
   }
-  var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+  const countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
   if (command === "동환") {
-    var now = new Date.getTime();
-    var left = countDownDate - now;
-    var day = Math.floor(left / (1000 * 60 * 60 * 24));
+    let now = new Date();
+    let left = countDownDate - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`군생활 ${day}일 남았습니다-`);
   }
   if (command === "^j") {
