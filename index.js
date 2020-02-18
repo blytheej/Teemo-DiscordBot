@@ -34,7 +34,7 @@ client.on("message", message => {
     message.channel.send("부삼먹어주세요");
   }
   if (command === "줌쌤") {
-    message.channel.send("가평상여자가 가평사나이를 찾아 떠난다");
+    message.channel.send("가평조자룡찾아떠난다");
   }
   if (command === "준돈") {
     message.channel.send("통장에유강민");
@@ -75,6 +75,16 @@ client.on("message", message => {
   }
   if (command === "태홍") {
     message.channel.send("ㅉ");
+  }
+  if (command === "전동환") {
+    message.channel.send("상추새기");
+  }
+  var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+  if (command === "동환") {
+    var now = new Date.getTime();
+    var left = countDownDate - now;
+    var day = Math.floor(left / (1000 * 60 * 60 * 24));
+    message.channel.send(`군생활 ${day}일 남았습니다-`);
   }
   if (command === "^j") {
     if (message.member.voiceChannel) {
