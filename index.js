@@ -24,11 +24,17 @@ client.on("message", message => {
   if (command === "티모") {
     message.channel.send("기여어");
   }
+  if (command === "은셜") {
+    message.channel.send("세계최고착하지^.^");
+  }
   if (command === "주미") {
     message.channel.send("줌쌤");
   }
   if (command === "줌줌") {
     message.channel.send("부삼먹어주세요");
+  }
+  if (command === "줌쌤") {
+    message.channel.send("가평상여자가 가평사나이를 찾아 떠난다");
   }
   if (command === "준돈") {
     message.channel.send("통장에유강민");
@@ -38,7 +44,7 @@ client.on("message", message => {
     message.channel.send(`내연녀 스택 : ${tj}`);
   }
   if (command === "머홍") {
-    message.channel.send("권상윤 남자친구");
+    message.channel.send("개때리고싶다");
   }
   if (command === "하린누나") {
     message.channel.send("뿌링핫도그 대기중");
@@ -49,8 +55,14 @@ client.on("message", message => {
   if (command === "주누") {
     message.channel.send("태준남친");
   }
+  if (command === "모래") {
+    message.channel.send("고인돌");
+  }
   if (command === "종혁") {
-    message.channel.send("치이익-");
+    message.channel.send("치-----이이---이--이--익---");
+  }
+  if (command === "크리티") {
+    message.channel.send("간잽e");
   }
   if (command === "준선") {
     message.channel.send("주미꼬봉이준선");
