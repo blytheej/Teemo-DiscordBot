@@ -40,7 +40,7 @@ client.on("message", message => {
     message.channel.send("통장에유강민");
   }
   if (command === "태준") {
-    tj += 1;
+    tj += 2;
     message.channel.send(
       `내연녀 생성 완료 ${Math.floor(tj / 10)}명 | 생성중 : ${(tj % 10) * 10}% `
     );
