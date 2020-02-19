@@ -42,7 +42,7 @@ client.on("message", message => {
   if (command === "태준") {
     tj += 1;
     message.channel.send(
-      `내연녀 생성 완료 ${tj / 10}명 | 생성중 : ${tj % 10}% `
+      `내연녀 생성 완료 ${Math.floor(tj / 100)}명 | 생성중 : ${tj % 100}% `
     );
   }
   if (command === "머홍") {
