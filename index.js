@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-let tj = 800;
+let tj = 80;
 //const GoogleImages  = require('google-images');
 
 client.on("ready", () => {
@@ -42,7 +42,7 @@ client.on("message", message => {
   if (command === "태준") {
     tj += 1;
     message.channel.send(
-      `내연녀 생성 완료 ${Math.floor(tj / 100)}명 | 생성중 : ${tj % 100}% `
+      `내연녀 생성 완료 ${Math.floor(tj / 10)}명 | 생성중 : ${tj % 10}% `
     );
   }
   if (command === "머홍") {
