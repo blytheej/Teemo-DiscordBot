@@ -86,7 +86,21 @@ client.on("message", message => {
     let now = new Date();
     let left = countDownDate - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
-    message.channel.send(`군생활 ${day}일 남았습니다-`);
+    message.channel.send(`${day}일 남았습니다-군-`);
+  }
+  const countDownDate = new Date("FEB 20, 2021 00:00:00").getTime();
+  if (command === "강민") {
+    let now = new Date();
+    let left = countDownDate - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
+    message.channel.send(`${day}일 남았습니다-군-`);
+  }
+  const countDownDate = new Date("MAY 18, 2021 00:00:00").getTime();
+  if (command === "허리피") {
+    let now = new Date();
+    let left = countDownDate - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
+    message.channel.send(`${day}일 남았습니다 -군-`);
   }
   if (command === "^j") {
     if (message.member.voiceChannel) {
