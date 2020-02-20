@@ -81,24 +81,24 @@ client.on("message", message => {
   if (command === "전동환") {
     message.channel.send("상추새기");
   }
-  const countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+  const countDownDatedh = new Date("Jan 1, 2023 00:00:00").getTime();
   if (command === "동환") {
     let now = new Date();
-    let left = countDownDate - now.getTime();
+    let left = countDownDatedh - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다-군-`);
   }
-  const countDownDate = new Date("FEB 20, 2021 00:00:00").getTime();
+  const countDownDategm = new Date("FEB 20, 2021 00:00:00").getTime();
   if (command === "강민") {
     let now = new Date();
-    let left = countDownDate - now.getTime();
+    let left = countDownDategm - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다-군-`);
   }
-  const countDownDate = new Date("MAY 18, 2021 00:00:00").getTime();
+  const countDownDateyc = new Date("MAY 18, 2021 00:00:00").getTime();
   if (command === "허리피") {
     let now = new Date();
-    let left = countDownDate - now.getTime();
+    let left = countDownDateyc - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다 -군-`);
   }
