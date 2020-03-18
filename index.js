@@ -102,7 +102,7 @@ client.on("message", message => {
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다 -군-`);
   }
-  if (command === "롤ㄱ") {
+  if (command === "롤ㄱ" || command === "ㄺ" || command === "ㄹㄱ") {
     message.channel.send("@here 님만오면5인큐");
   }
   if (command === "^j") {
