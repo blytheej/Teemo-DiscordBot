@@ -7,7 +7,7 @@ client.on("ready", () => {
   console.log("run");
 });
 
-client.on("message", message => {
+client.on("message", (message) => {
   let msg = message.content.split(" ");
   let command = msg[0];
   let contents = "";
@@ -38,12 +38,6 @@ client.on("message", message => {
   }
   if (command === "준돈") {
     message.channel.send("통장에유강민");
-  }
-  if (command === "태준") {
-    tj += 2;
-    message.channel.send(
-      `내연녀 생성 완료 ${Math.floor(tj / 10)}명 | 생성중 : ${(tj % 10) * 10}% `
-    );
   }
   if (command === "머홍") {
     message.channel.send("개때리고싶다");
@@ -81,6 +75,10 @@ client.on("message", message => {
   if (command === "전동환") {
     message.channel.send("상추새기");
   }
+  const countDownDatetj = new Date("June 2, 2022 00:00:00").getTime();
+  if (command === "태준") {
+    message.channel.send(`${day}일 남았습니다-군-`);
+  }
   const countDownDatedh = new Date("Jan 1, 2023 00:00:00").getTime();
   if (command === "동환") {
     let now = new Date();
@@ -109,7 +107,7 @@ client.on("message", message => {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
         .join()
-        .then(connection => {
+        .then((connection) => {
           connection.playFile("laugh.mp3");
         })
         .catch(console.log);
@@ -153,7 +151,7 @@ client.on("message", message => {
       message.channel.send("write user name!");
     } else {
       let user = message.guild.members;
-      user.forEach(function(member) {
+      user.forEach(function (member) {
         if (member.user.username === msg[1]) {
           console.log(member.user);
           let game = member.user.presence.game;
