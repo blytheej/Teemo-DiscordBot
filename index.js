@@ -77,6 +77,9 @@ client.on("message", (message) => {
   }
   const countDownDatetj = new Date("June 2, 2022 00:00:00").getTime();
   if (command === "태준") {
+    let now = new Date();
+    let left = countDownDatetj - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다-군-`);
   }
   const countDownDatedh = new Date("Jan 1, 2023 00:00:00").getTime();
