@@ -106,7 +106,7 @@ client.on("message", (message) => {
   const countDownDateyy = new Date("DEC 29, 2020 00:00:00").getTime();
   if(command === "영웅") {
     let now = new Date();
-    let left = countDownDateyc - now.getTime();
+    let left = countDownDateyy - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다 -군-`);
   }
