@@ -110,8 +110,8 @@ client.on("message", (message) => {
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
     message.channel.send(`${day}일 남았습니다 -군-`);
   }
-  const countDownDatest = new Date("OCT 8, 2020 00:00:00").getTime();
-  if(command === "스팀" || "간" || "현준" || "현준이형") {
+  const countDownDatest = new Date("OCT 8, 2021 00:00:00").getTime();
+  if(command === "스팀" || command ==="간" ||command === "현준" ||command === "현준이형") {
     let now =  new Date();
     let left = countDownDatest - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
