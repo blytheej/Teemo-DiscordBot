@@ -111,7 +111,7 @@ client.on("message", (message) => {
     message.channel.send(`${day}일 남았습니다 -군-`);
   }
   const countDownDatest = new Date("OCT 8, 2021 00:00:00").getTime();
-  if(command === "스팀" || command ==="간" ||command === "현준" ||command === "현준이형") {
+  if(command === "스팀" || command ==="간" ||command === "현준" ||command === "현준이형" || command === "머머리") {
     let now =  new Date();
     let left = countDownDatest - now.getTime();
     let day = Math.floor(left / (1000 * 60 * 60 * 24));
@@ -121,6 +121,15 @@ client.on("message", (message) => {
   if (command === "롤ㄱ" || command === "ㄺ" || command === "ㄹㄱ") {
     message.channel.send("@here 님만오면5인큐");
   }
+
+  if(command === "ㅎㄱ"){
+    message.channel.send("학고의 전당 - 엄 상 윤 | 김 모 래 | 윤 예 찬");
+  }
+
+  if(command === "정신나갈것같애"){
+    message.channel.send("정신나갈것같애");
+  }
+
   if (command === "^j") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
@@ -133,6 +142,8 @@ client.on("message", (message) => {
       message.reply("you're not in voice channel");
     }
   }
+
+  
 
   if (command === "^leave") {
     message.member.voiceChannel.leave();
