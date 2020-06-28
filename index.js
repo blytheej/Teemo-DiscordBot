@@ -126,9 +126,6 @@ client.on("message", (message) => {
     message.channel.send("학고의 전당 - 엄 상 윤 | 김 모 래 | 윤 예 찬");
   }
 
-  if(command === "정신나갈것같애"){
-    message.channel.send("정신나갈것같애");
-  }
 
   if (command === "^j") {
     if (message.member.voiceChannel) {
