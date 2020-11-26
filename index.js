@@ -10,14 +10,13 @@ client.on("ready", () => {
 client.on("message", (message) => {
   let msg = message.content.split(" ");
   let command = msg[0];
-  let contents = "";
+  let contents;
   if (msg[1] !== undefined) {
     for (let i = 1; i < msg.length; i++) {
       contents += msg[i] + " ";
     }
   }
 
-  console.log(command + " + " + contents);
   if (command === "teemo") {
     message.channel.send("is cute");
   }
@@ -69,13 +68,17 @@ client.on("message", (message) => {
   if (command === "이준선") {
     message.channel.send("김용문딱가리-주누");
   }
+  const countDownDateth = new Date("APR 04, 2022 00:00:00").getTime();
   if (command === "태홍") {
-    message.channel.send("ㅉ");
+    let now = new Date();
+    let left = countDownDateth - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
+    message.channel.send(`${day}일 -군-`);
   }
   if (command === "전동환") {
     message.channel.send("상추새기");
   }
-  const countDownDatetj = new Date("Feb 22, 2022 00:00:00").getTime();
+  const countDownDatetj = new Date("Feb 03, 2022 00:00:00").getTime();
   if (command === "태준") {
     let now = new Date();
     let left = countDownDatetj - now.getTime();
@@ -121,9 +124,12 @@ client.on("message", (message) => {
   if (command === "롤ㄱ" || command === "ㄺ" || command === "ㄹㄱ") {
     message.channel.send("@here 님만오면5인큐");
   }
+  if(command === "ㅂㄺ"){
+    message.channel.send("@here 님만오면5인큐");
+  }
 
   if(command === "ㅎㄱ"){
-    message.channel.send("학고의 전당 - 엄 상 윤 | 김 모 래 | 윤 예 찬");
+    message.channel.send("학고의 전당 - 여우눈나 | 김 모 래 | 윤 예 찬");
   }
 
 
