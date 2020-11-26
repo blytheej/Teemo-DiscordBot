@@ -59,8 +59,12 @@ client.on("message", (message) => {
   if (command === "크리티") {
     message.channel.send("간잽e");
   }
+  const countDownDatejs = new Date("FEB 10, 2022 00:00:00").getTime();
   if (command === "준선") {
-    message.channel.send("주미꼬봉이준선");
+    let now = new Date();
+    let left = countDownDatejs - now.getTime();
+    let day = Math.floor(left / (1000 * 60 * 60 * 24));
+    message.channel.send(`${day}일 -군-`);
   }
   if (command === "정태준") {
     message.channel.send("권상윤동거남녀?-김태홍");
